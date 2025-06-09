@@ -1,57 +1,106 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>큐알코드 2번</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 2rem;
-        }
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-        audio {
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>성보박물관 대자대비 오디오 가이드 ②</title>
+  <style>
+    :root {
+      font-size: 18px; /* ✅ 모든 디바이스에서 글자 크게 */
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 1rem;
+      background: #f6f6f6;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border: 1px solid #ddd;
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin: 0 0 0.8rem 0;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .card audio {
+      display: block;
+      width: 100%;     /* ✅ 전체 너비로 고정 */
+      height: 42px;    /* ✅ iOS에서 최소한 표시되게 */
+      margin-top: 1rem;
+    }
+.card img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+ }
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
+    <h1>성보박물관 대자대비 오디오 가이드 ②</h1>
+
     <div class="card">
         <h2>사명당 진영</h2>
-        <img src="images/sample_01.jpg" alt="사명당 진영">
-        <p>삼면이 바다로 둘러싸인 우리는 좀 더 넓은 세상으로 나아가기 위해서 언제나 바다를 건너야했습니다...</p>
+        <img src="images/samy.bmp" alt="사명당 진영">
+        <p>삼면이 바다로 둘러싸인 우리는 좀 더 넓은 세상으로 나아가기 위해서 언제나 바다를 건너야했습니다. 가장 가까이 닿는 곳 일본과의 관계는 요동치는 물결과 같아 항상 아슬아슬했지만, 그 파도 위에서 함께 손을 맞잡은 순간들이 있었습니다.
+국교가 단절된 가운데 평화를 향한 뜻을 놓지 않았던 우리는 외교사절단 조선통신사를 파견해 대화를 이어갔습니다. 임진왜란 때 승병장으로 활약했던 사명대사는 전쟁의 상처가 채 아물지 않은 시기, 포로 송환과 화친의 문을 열기 위해 바다를 건넜습니다. 큰 바람과 거친 파도를 넘어 바다를 건넜던 조선통신사는 단순한 외교 사절단을 넘어 평화와 우정, 문화 교류의 상징이었습니다.</p>
         <audio controls>
-            <source src="audio/sample_01.mp3" type="audio/mpeg">
+            <source src="audio/jogye_gate.mp3" type="audio/mpeg">
+            오디오를 지원하지 않는 브라우저입니다.
         </audio>
     </div>
+    
     <div class="card">
         <h2>벽산장호의상대 현판</h2>
-        <img src="images/sample_02.jpg" alt="벽산장호의상대 현판">
-        <p>1888년 무자년 중추 수군절도사 정용응의 글입니다. 금정산 범어사의 풍경을 노래하였습니다...</p>
+        <img src="images/wall.jpeg" alt="벽산장호의상대 현판">
+        <p>1888년 무자년 중추 수군절도사 정익용의 글입니다. 금정산 범어사의 풍경을 노래하였습니다.
+푸른 산은 길게 둘러 의상대를 감싸 안고, 한 그루의 보리수는 그 옆 땅에 우뚝 섰네.
+세월 지나 절의 뛰어남 아는 이 이제 없고, 태평성세라 스님과 벗 삼는 것 용납하네
+사찰 소리 골짝 나와 맑은 숲을 뒤흔들고, 바다색은 처마 끝의 오랜 이끼 휘적시네
+슬프게도 금어에는 소식이 다 끊겼는데, 우물가의 오직 위에 오색구름 펼쳐졌네</p>
         <audio controls>
-            <source src="audio/sample_02.mp3" type="audio/mpeg">
+            <source src="audio/bulimun.mp3" type="audio/mpeg">
+            오디오를 지원하지 않는 브라우저입니다.
         </audio>
     </div>
+    
     <div class="card">
         <h2>금어선원 현판</h2>
-        <img src="images/sample_03.jpg" alt="금어선원 현판">
-        <p>독립운동가 김가진의 &lt;금어선원&gt; 현판입니다. 동농 김가진은 대한제국의 혁신 관료로서 조선민족대동단을 창립하고...</p>
+            <img src="images/gold.jpeg" alt="금어선원 현판">
+        <p>독립운동가 동농 김가진의 <금어선원> 현판입니다. 동농 김가진은 대한제국의 혁신 관료로서 조선민족대동단을 창단하고 대한민국임시정부 고문을 지낸 독립운동가로 당대 명필로도 알려져 있습니다. 1922년 7월 조국이 독립하기 전 중국 상하이에서 생을 마감한 김가진은 조선의 전통적인 선비 정신과 근대적 개화사상을 바탕으로 나라의 독립과 미래를 위해 평생을 헌신한 인물로 평가받고 있습니다. 광복 80주년을 기념하여 최초 공개하는 이 현판은 선찰대본산 범어사의 상징과도 같은 근대선원 ‘금어선원’을 새긴 편액이라는 점에서 매우 의미 있습니다.</p>
         <audio controls>
-            <source src="audio/sample_03.mp3" type="audio/mpeg">
+            <source src="audio/yeoncho.mp3" type="audio/mpeg">
+            오디오를 지원하지 않는 브라우저입니다.
         </audio>
     </div>
+  
 </body>
 </html>
